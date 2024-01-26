@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --fuentePrincipal: font-family: 'Poppins', sans-serif;
+    --colorBarra: #333;
+    --colorFuentes: white;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    cursor: pointer; 
+    margin: 0;
+    padding: 0; 
+    border-style: none;
+}
+.menu-desplegable{
+    position: relative;
+    padding: 0-5em;
+    user-select: none;
+
+}
+.menu-desplegable::before{
+    content: #8801;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-right: 0.5em;
+}
+ul{
+    list-style: none;
+}
+.secciones{
+    padding: 10px;
+    background-color: var(--colorBarra);
+    color: var(--colorFuentes);
+    width: 100px;
+}
+.menu-bar{
+    background-color: var(--colorBarra);
+    color: var(--colorFuentes);
+    padding: 20px;
+
+}
+summary::marker{
+    display: none;
+    color: #333;
+}

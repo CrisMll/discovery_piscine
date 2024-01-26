@@ -1,0 +1,13 @@
+.perfil{
+    border-radius: 80%;
+    width: 150px;
+    height: 140px;
+}
+.redes{
+    width: 30px;
+}
+.card-contenedor{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}

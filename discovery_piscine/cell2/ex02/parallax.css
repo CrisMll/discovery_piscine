@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+main {
+    height: 300vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem; 
+    font-family: sans-serif;
+}
+
+.no-parallax-1 {
+    background-image: url("https://www.fmdos.cl/wp-content/uploads/2017/07/Feliz-destacada.jpg");
+    background-attachment: fixed;
+}
+
+.no-parallax-2 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F9b%2Fa2%2F7f%2F9ba27f898331bd9e33740d012ba3438b.jpg&f=1&nofb=1&ipt=509e19a7c220c79216182026ffb0ca791638d79781ca0c48240243c1648af439&ipo=images");
+    background-attachment: fixed;
+    background-size: 100% 100%; 
+}
+.parallax {
+    perspective: 1px;
+    transform-style: inherit;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: 50%;
+}
+
+.parallax:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+}
+.parallax3 {
+    background-color: black;
+    height: 100vh; 
+    background-size: 100% 100%; 
+}
+
+.parallax3:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    z-index: -1;
+}
+
+.no-parallax-2.parallax3:before {
+    background-image: none; 
+}

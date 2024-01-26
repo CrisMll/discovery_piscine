@@ -1,0 +1,1 @@
+echo $(pwd)/$(basename $0) | tr -s '/' ','

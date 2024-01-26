@@ -1,0 +1,13 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+figure{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+figure img{
+    display: inline-flex;
+}
+
